@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Montessori & School System</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: hsl(0, 0%, 96%);
+        }
+
+        /* Header */
+        .header {
+            background: #990000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #cc0018;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background: #006699;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1400x500') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0 0 10px black;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 30px;
+            background: white;
+            margin: 20px auto;
+            width: 85%;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        h2 {
+            color: #006699;
+        }
+
+        /* Admission Popup */
+        .admission-box {
+            display: add table-caption;
+            background: white;
+            width: 80%;
+            padding: 20px;
+            box-shadow: 0 0 15px #aaaaaa;
+            margin: 20px auto;
+            border-left: 5px solid #0088cc;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #006699;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <script>
+        function openAdmission() {
+            document.getElementById('admissionRequirements').style.display = 'block';
+            window.scrollTo(0, document.getElementById('admissionRequirements').offsetTop);
+        }
+
+        function closeAdmission() {
+            document.getElementById('admissionRequirements').style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Ayan Montessori & School System</h1>
+        <p>we can make your future</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#" onclick="openAdmission()">Admission and fee structure</a>
+        <a href="#">Result </a>
+    </div>
+
+    <div class="hero">
+        Welcome to Ayan Montessori & School System
+    </div>
+
+    <div class="container">
+        <h2>About Our School</h2>
+        <p>
+            Ayan Montessori & School System provides a child-focused learning environment 
+            based on modern Montessori teaching methods. We aim to develop confident, 
+            disciplined, and responsible students through quality education.
+        </p>
+
+        <h2>Programs Offered</h2>
+        <ul>
+            <li>Montessori (Play Group, Nursery )</li>
+            <li>Primary Classes (Grade 1–5)</li>
+            <li>Middle Classes (Grade 6–8)</li>
+            <li>High School (Grade 9–10)</li>
+        </ul>
+    </div>
+
+    <!-- Admission Requirements Box -->
+    <div id="admissionRequirements" class="admission-box">
+        <span class="close-btn" onclick="closeAdmission()">×</span>
+        <h2>Admission Requirements</h2>
+        <p>To apply for admission at Ayan Montessori & School System, the following documents are required:</p>
+
+        <ul>
+            <li>Student’s Birth Certificate</li>
+            <li>2 Passport-size Photographs</li>
+            <li>Father’s / Guardian’s CNIC Copy</li>
+            <li>Previous School Leaving Certificate (if applicable)</li>
+            <li>Last Class Marksheet (if applicable)</li>
+            <li>Completed Admission Form</li>
+        </ul>
+
+        <p><b>Note:</b> All documents must be submitted at the school office during admission hours.</p>
+    </div>
+
+    <div class="footer">
+        Contact: 03215184711 | © 2025 Ayan Montessori & School System
+    </div>
+
+</body>
+</html>
